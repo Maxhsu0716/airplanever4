@@ -380,7 +380,7 @@ window.onload = function() {
                     document.addEventListener('keydown', handleKeyPress);
                 }
             }
-        }, 3000); // 每隔3000毫秒（3秒）恢復一格電力
+        }, 750); // 每隔750毫秒（0.75秒）恢復一格電力
 
         // 啟動計時器
         timerInterval = setInterval(() => {

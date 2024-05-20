@@ -76,8 +76,8 @@
 }
 
 .control-buttons button {
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     border: none;
     background-color: #ccc;
     color: #333;
@@ -97,9 +97,7 @@ body {
 	margin: 0;
     padding: 0;
     background-size: cover;
-
 	background-image: url('bluesky.jpg') ; 
-	background-repeat: no-repeat;
 }
 
 
@@ -140,7 +138,7 @@ body {
 }
 
 #battery {
-	width: 230px;
+	width: 200px;
     height: 80px;
     position: absolute;
     bottom: 20px; /* 距離底部的距離 */
@@ -153,12 +151,12 @@ body {
 }
 
 #black-square {
-    width: 15px; /* 小黑方块的宽度 */
-    height: 20px; /* 小黑方块的高度 */
-    background-color: black; /* 设置小黑方块的背景颜色 */
+    width: 15px; 
+    height: 20px; 
+    background-color: black; 
     position: absolute;
-    bottom: calc(60px - 10px); /* 确保小黑方块与电池底部对齐并保持水平居中 */
-    left: calc(20px + 230px + 5px); /* 确保小黑方块与电池右边贴齐 */
+    bottom: calc(60px - 10px); 
+    left: calc(20px + 200px + 5px);
 }
 .cell {
     width: 70px;
