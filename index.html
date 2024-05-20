@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>飛機遊戲</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<table id="grid"></table>
+
+<div class="control-buttons">
+    <button class="control-button" id="btn-w">W</button>
+    <button class="control-button" id="btn-a">A</button>
+    <button class="control-button" id="btn-s">S</button>
+    <button class="control-button" id="btn-d">D</button>
+</div>
+
+<div id="scoreboard-list">
+        <h3>Scoreboard</h3>
+        <ul id="scores">
+            <li>NO.1: --:--:--</li>
+            <li>NO.2: --:--:--</li>
+            <li>NO.3: --:--:--</li>
+        </ul>
+    </div>
+
+<div id="timer" class="timer">00:00:000</div>
+
+<script src="script.js"></script>
+
+<div id="battery">
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+	<div class="cell"></div>
+	<div class="cell"></div>
+</div>
+
+<audio id="planeSound" src="plane.mp3"></audio>
+
+<img id="planeImg" src="AIRPLANE.png" alt="Plane" style="display: none;">
+
+<div id="black-square"></div>
+
+<div id="popup" class="popup">
+    <h2>RULES</h2>
+	<p>用WASD鍵控制飛機左右飛行，躲避落下的隕石。</p>
+	<p>注意左下的電池條，移動一次將消耗一格，耗光了則不能移動，每0.75秒回充一格</P>
+    <button id="play-button">PLAY</button>
+</div>
+
+
+</body>
+</html>
